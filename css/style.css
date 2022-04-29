@@ -1,3 +1,16 @@
+/* Geral */
+body{
+    background-color: #F1F1F1;
+}
+
+h2{
+    color: rgba(0, 0, 0, 0.9);
+}
+
+h3{
+    color: #D40505;
+}
+
 /* Header / Navbar */
 
 .navbar{
@@ -7,4 +20,21 @@
 .nav-link{
     font-size: 1.1em;
     font-weight: 600;
+}
+
+/* Sobre */
+
+#perfil{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.form-control:focus{
+    border: 0;
+    box-shadow: 0 0 2px .20rem rgba(212, 5, 5, 0.5);
+}
+
+.btn-danger{
+    background-color: #D40505;
+    border-color: #D40505;
 }
