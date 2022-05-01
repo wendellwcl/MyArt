@@ -1,7 +1,7 @@
 /* Geral */
 
 :root{
-    --cor: #a70000;
+    --cor: #A70000;
 }
 
 body{
@@ -30,6 +30,7 @@ h3{
 
 .navbar-toggler{
     color: transparent !important;
+    border: none;
 }
 
 /* Sobre */
@@ -47,4 +48,37 @@ h3{
 .btn-danger{
     background-color: var(--cor);
     border-color: var(--cor);
+}
+
+/* Footer */
+
+footer .col-12:first-child{
+    color: var(--cor);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor);
+    position: relative;
+    transition: .5s;
+    padding: 2px 0;
+}
+
+footer a:hover{
+    color: rgba(212, 5, 5, 0.8);
+}
+
+footer a::before{
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    border-bottom: 1px solid var(--cor);
+    transition: .5s;
+}
+
+footer a:hover::before{
+    border-bottom: 1px solid rgba(212, 5, 5, 0.8);
+    width: 100%;
 }
