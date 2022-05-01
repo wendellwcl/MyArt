@@ -1,4 +1,9 @@
 /* Geral */
+
+:root{
+    --cor: #a70000;
+}
+
 body{
     background-color: #F1F1F1;
 }
@@ -8,18 +13,23 @@ h2{
 }
 
 h3{
-    color: #D40505;
+    color: var(--cor);
 }
 
 /* Header / Navbar */
 
-.navbar{
-    height: 90px;
-}
-
 .nav-link{
     font-size: 1.1em;
     font-weight: 600;
+}
+
+.nav-link:hover{
+    transition: .3s;
+    color: var(--cor) !important;
+}
+
+.navbar-toggler{
+    color: transparent !important;
 }
 
 /* Sobre */
@@ -31,10 +41,10 @@ h3{
 
 .form-control:focus{
     border: 0;
-    box-shadow: 0 0 2px .20rem rgba(212, 5, 5, 0.5);
+    box-shadow: 0 0 5px .25rem rgba(212, 5, 5, 0.5);
 }
 
 .btn-danger{
-    background-color: #D40505;
-    border-color: #D40505;
+    background-color: var(--cor);
+    border-color: var(--cor);
 }
