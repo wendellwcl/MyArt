@@ -39,11 +39,11 @@ h3{
     overflow: hidden;
 }
 
-img{
+#galeria img{
     transition: .5s;
 }
 
-img:hover{
+#galeria img:hover{
     transform: scale(1.1);
 }
 
